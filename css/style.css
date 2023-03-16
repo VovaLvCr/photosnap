@@ -210,10 +210,6 @@ main {
     opacity: 0;
 }
 
-.gradient:hover {
-    opacity: 1;
-}
-
 .storys_name {
     width: 280px;
     display: flex;
@@ -274,9 +270,13 @@ main {
 }
 
 .card_story:hover {
-    cursor: pointer;
-    position: relative;
+    /* cursor: pointer;
+    position: relative; */
     top: -24px;
+}
+
+.card_story:hover .gradient {
+    opacity: 1;
 }
 
 /*  */
