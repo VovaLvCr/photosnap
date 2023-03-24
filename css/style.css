@@ -11,7 +11,8 @@ body {
 ul,
 h2,
 h3,
-p {
+p,
+body {
     margin: 0;
     padding: 0;
 }
@@ -26,12 +27,12 @@ a {
 
 
 header>div {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 nav>ul {
@@ -46,6 +47,7 @@ nav>ul {
     line-height: 16px;
     letter-spacing: 2px;
     color: #000000;
+    transition: 0.5s;
 }
 
 .nav:hover {
@@ -63,6 +65,7 @@ nav>ul {
     line-height: 16px;
     letter-spacing: 2px;
     color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .get_invite:hover {
@@ -75,18 +78,22 @@ nav>ul {
 
 
 
-main {
+/* main {
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 
 .content_photo {
     display: flex;
 }
 
+.photo_l_r {
+    width: 60%;
+}
+
 .box_content_black {
     background: #000000;
-    width: 610px;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +144,7 @@ main {
     display: flex;
     align-items: center;
     gap: 26px;
+    transition: 0.5s;
 }
 
 .butt_white:hover {
@@ -146,7 +154,7 @@ main {
 
 .box_content_white {
     background: #FFFFFF;
-    width: 610px;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +194,7 @@ main {
     display: flex;
     align-items: center;
     gap: 26px;
+    transition: 0.5s;
 }
 
 .butt_black:hover {
@@ -194,12 +203,14 @@ main {
 }
 
 .card_story {
-    width: 360px;
-    height: 500px;
+    min-width: 360px;
+    width: 25%;
+    min-height: 500px;
     display: flex;
     align-items: end;
     justify-content: center;
     position: relative;
+    transition: all 1s;
 }
 
 .gradient {
@@ -208,6 +219,7 @@ main {
     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
     position: absolute;
     opacity: 0;
+    transition: 1s;
 }
 
 .storys_name {
@@ -218,18 +230,25 @@ main {
 
 .mountain {
     background: url(../images/mountains.png);
+    background-size: cover;
 }
 
 .city {
     background: url(../images/cityscapes.png);
+    background-size: cover;
+
 }
 
 .voyage {
     background: url(../images/voyage.png);
+    background-size: cover;
+
 }
 
 .architect {
     background: url(../images/architecturals.png);
+    background-size: cover;
+
 }
 
 .story_title {
@@ -270,14 +289,14 @@ main {
 }
 
 .card_story:hover {
-    /* cursor: pointer;
-    position: relative; */
     top: -24px;
 }
 
 .card_story:hover .gradient {
     opacity: 1;
 }
+
+
 
 /*  */
 
@@ -327,8 +346,8 @@ main {
 footer {
     background: #000000;
     min-height: 250px;
-    max-width: 1440px;
-    margin: 0 auto;
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
     padding: 64px 168px;
     display: flex;
     justify-content: space-between;
@@ -358,6 +377,7 @@ footer {
 
 .fb {
     background-image: url(../images/facebook_w.svg);
+    transition: 0.5s;
 }
 
 .fb:hover {
@@ -366,6 +386,7 @@ footer {
 
 .youtube {
     background-image: url(../images/youtube_w.svg);
+    transition: 0.5s;
 }
 
 .youtube:hover {
@@ -374,6 +395,7 @@ footer {
 
 .twiter {
     background-image: url(../images/twitwr_w.svg);
+    transition: 0.5s;
 }
 
 .twiter:hover {
@@ -382,6 +404,7 @@ footer {
 
 .ppp {
     background-image: url(../images/p_w.svg);
+    transition: 0.5s;
 }
 
 .ppp:hover {
@@ -390,6 +413,7 @@ footer {
 
 .insta {
     background-image: url(../images/insta_w.svg);
+    transition: 0.5s;
 }
 
 .insta:hover {
@@ -410,6 +434,7 @@ footer {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .fut_navigation>ul>li>a:hover {
@@ -432,4 +457,26 @@ footer {
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
+}
+
+
+/* tablet */
+
+@media (max-width: 800px) {
+    .content_photo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .responsive {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .card_story {
+        width: 375px;
+        height: 375px;
+    }
 }
