@@ -162,8 +162,6 @@ header {
     }
 
     &__img {
-        // max-width: 830px;
-        // min-height: 650px;
         width: 60%;
     }
     
@@ -201,7 +199,6 @@ header {
 }
 
 .card {
-    // min-width: 360px;
     width: 25%;
     min-height: 500px;
     display: flex;
@@ -343,7 +340,6 @@ header {
 .foot {
     background: #000000;
     min-height: 250px;
-    // padding: 64px 168px;
     padding: 64px 0;
     display: flex;
     justify-content: space-around;
@@ -619,6 +615,7 @@ header {
 
 .box__content {
     min-height: 490px;
+    width: 40%;
 }
 
 .features__center {
@@ -628,8 +625,7 @@ header {
 .photokeys {
     background: url(../images/photokeys.png);
     background-size: cover;
-    max-width: 830px;
-    width: 100%;
+    width: 60%;
 
     @media (max-width: 768px) {
         background: url(../images/photokeys768.jpg);
@@ -682,8 +678,8 @@ header {
 
 .pricing {
     background: url(../images/pricing.png);
-    max-width: 830px;
-    width: 100%;
+    background-size: cover;
+    width: 60%;
 
     @media (max-width: 768px) {
         background: url(../images/pricing768.jpg);

@@ -609,6 +609,7 @@ header button:hover {
 
 .box__content {
   min-height: 490px;
+  width: 40%;
 }
 
 .features__center {
@@ -618,8 +619,7 @@ header button:hover {
 .photokeys {
   background: url(../images/photokeys.png);
   background-size: cover;
-  max-width: 830px;
-  width: 100%;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .photokeys {
@@ -670,8 +670,8 @@ header button:hover {
 
 .pricing {
   background: url(../images/pricing.png);
-  max-width: 830px;
-  width: 100%;
+  background-size: cover;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .pricing {
